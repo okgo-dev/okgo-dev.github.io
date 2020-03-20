@@ -27,7 +27,8 @@
 
 <script type="text/javascript">
 
-    var gun = Gun(['https://livecodestream-us.herokuapp.com/gun','https://livecodestream-eu.herokuapp.com/gun']);
+    var gun = Gun(['https://gunjs.herokuapp.com/gun'
+		,'https://guntest.herokuapp.com/gun']);
     var think = gun.get('index');
     var thoughtItemStr = function (id) { return '<li class="thought__item"><label class="visually-hidden" for="' + id + '">Thought</label><input id="' + id + '" class="thought__input huet"><li/>' }
     var typing, throttle;
